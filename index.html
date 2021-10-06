@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- slick carousel stylesheeet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        /* welcome message inside carousel */
+        .welcome-message {
+            z-index: 1;
+        }
+
+        .carousel-item-container img {
+            height: 600px;
+        }
+
+        /* about us section style */
+        .about-us {
+            background-color: whitesmoke;
+        }
+
+        /* read more button common style */
+        .read-more img {
+            transition: transform 0.5s ease-in;
+        }
+
+        .read-more:hover img {
+            transform: scale(1.1);
+            opacity: .75;
+        }
+
+        .read-more button {
+            display: none;
+            background-color: transparent;
+            transition: display 0.5s ease-in;
+        }
+
+        .read-more:hover button {
+            display: block;
+        }
+
+        .read-more:hover {
+            background-color: gray;
+        }
+
+        .partners-img {
+            border-radius: 50%;
+            height: 250px;
+        }
+
+        /* slick slider arrow if you want to add side arrow to slick slider*/
+        /* .slick-next {
+            right: -50%;
+        }
+
+        .slick-next::before {
+            color: black;
+        }
+
+        .slick-prev {
+            left: -50%;
+        }
+
+        .slick-prev::before {
+            color: black;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- including nav bar from header.html -->
+        <div class="include-navbar">
+
+        </div>
+
+        <!-- carousel slider from bootstrap -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide position-relative custom-position"
+            data-bs-ride="carousel">
+
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white welcome-message">
+                <h1>Welcome TO</h1>
+                <h6><span class="common-color">something</span> corporation</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officiis quibusdam illo incidunt!
+                    Voluptates minus sed quasi facilis aut consequuntur illo quisquam! Reprehenderit nam asperiores
+                    recusandae id doloremque laboriosam inventore!</p>
+            </div>
+
+            <div class="carousel-inner carousel-item-container">
+                <div class="carousel-item active">
+                    <img src="/resources/images/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/resources/images/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/resources/images/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- main body section strats from here -->
+    <main class="position-relative custom-position">
+
+        <!-- about us section -->
+        <section class="about-us">
+            <div class="container py-4">
+                <div class="d-flex align align-items-center mt-4 pt-4">
+                    <h1>ABOUT US</h1>
+                    <hr class="mx-3 opacity-100 flex-grow-1 common-color">
+                </div>
+                <div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4 px-auto py-3">
+                        <!-- play video -->
+                        <div class="col">
+                            <iframe width="100%" height="370" src="https://www.youtube.com/embed/7tz4Ya6gzG4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column ">
+                                <div class="read-more position-relative overflow-hidden">
+                                    <div>
+                                        <img class="w-100" src="/resources/images/3.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                            Read
+                                            More</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magnam a
+                                        saepe sunt odit non reiciendis in, nam temporibus cupiditate possimus rem minima
+                                        numquam deserunt tempore doloribus, id est quam.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- partners section -->
+        <section class="container py-4 partners text-center">
+            <div class="d-flex align align-items-center mt-4 pt-4">
+                <hr class="mx-3 opacity-100 flex-grow-1 common-color">
+                <h1>OUR PARTNERS</h1>
+                <hr class="mx-3 opacity-100 flex-grow-1 common-color">
+            </div>
+            <div class="row my-4 g-3">
+                <div class="col-sm-10 col-md-3 d-flex flex-column align-items-center">
+                    <img class="w-75 partners-img" src="/resources/images/1.jpg" alt="">
+                    <h2 class="common color mt-3">partner-1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid enim, vero eos veritatis
+                        doloribus sapiente at fuga et? Velit?</p>
+                </div>
+                <div class="col-sm-10 col-md-3 d-flex flex-column align-items-center">
+                    <img class="w-75 partners-img" src="/resources/images/1.jpg" alt="">
+                    <h2 class="common color mt-3">partner-1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid enim, vero eos veritatis
+                        doloribus sapiente at fuga et? Velit?</p>
+                </div>
+                <div class="col-sm-10 col-md-3 d-flex flex-column align-items-center">
+                    <img class="w-75 partners-img" src="/resources/images/1.jpg" alt="">
+                    <h2 class="common color mt-3">partner-1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid enim, vero eos veritatis
+                        doloribus sapiente at fuga et? Velit?</p>
+                </div>
+                <div class="col-sm-10 col-md-3 d-flex flex-column align-items-center">
+                    <img class="w-75 partners-img" src="/resources/images/1.jpg" alt="">
+                    <h2 class="common color mt-3">partner-1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid enim, vero eos veritatis
+                        doloribus sapiente at fuga et? Velit?</p>
+                </div>
+                <div class="col-sm-10 col-md-3 d-flex flex-column align-items-center">
+                    <img class="w-75 partners-img" src="/resources/images/1.jpg" alt="">
+                    <h2 class="common color mt-3">partner-1</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid enim, vero eos veritatis
+                        doloribus sapiente at fuga et? Velit?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- latest news section -->
+        <section class="container py-4 laterst-news">
+            <div class="d-flex align align-items-center mt-4 pt-4">
+                <hr class="mx-3 opacity-100 flex-grow-1 common-color">
+                <h1>LATEST NEWS</h1>
+            </div>
+            <!-- latest news cards -->
+            <!-- display using slick carousel -->
+            <div class=" slider container row  mx-auto">
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/1.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title 1</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2 ">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/2.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title 2</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/3.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/1.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/2.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class=" card-body">
+                            <h5 class="card-title common-color">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/3.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural
+                                lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-10 col-lg-4 mx-2">
+                    <div class="card h-100 border-0">
+                        <div class="read-more position-relative overflow-hidden">
+                            <div>
+                                <img class="w-100" src="/resources/images/2.jpg" alt="">
+                            </div>
+                            <div>
+                                <button
+                                    class="btn  text-white border border-white position-absolute top-50 start-50 translate-middle ">+
+                                    Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title common-color">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a
+                                natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- jquery script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- bootstrap javascript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="js/app.js"></script>
+    <!-- slick carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- from slick slider website -->
+    <script>
+
+        $('.slider').slick({
+            infinite: true,
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
+    <!-- script to include header.html -->
+    <script type="text/javascript">
+        $(function () {
+            $(".include-navbar").load("header.html");
+        });
+    </script>
+</body>
+
+</html>

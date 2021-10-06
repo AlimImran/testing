@@ -1,0 +1,38 @@
+h6{
+    font-size: 4rem;
+}
+hr{
+    padding: 2px;
+}
+.common-color{
+    color: #4a1ec3;
+}
+
+/* setting a custom position to sync with navbar fixed position*/
+.custom-position{
+    top: 70px;
+}
+.common-color {
+    color: #4a1ec3;
+}
+
+/* navbar styles */
+.nav-container {
+    background-color: white;
+    z-index: 9;
+}
+
+.nav-content a {
+    color: #4a1ec3;
+}
+
+.nav-content a:hover {
+    background-color: #4a1ec3;
+    color: white;
+    border-radius: 3px;
+}
+
+.nav-link:focus {
+    color: #4a1ec3;
+}
+
